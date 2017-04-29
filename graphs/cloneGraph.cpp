@@ -46,7 +46,7 @@ UndirectedGraphNode* cloneGraph(UndirectedGraphNode* graph) {
 
                 map[neighbor] = neighborClone; // add the neighbor to the map
                 border.push(neighbor); // the neighbor should be cloned later
-                // if a copy already exists
+            // if a copy already exists
             } else {
                 map[currNode]->neighbors.push_back(map[neighbor]);
             }
