@@ -10,7 +10,7 @@ using namespace std;
  * Given a linked list, return the node where the cycle begins. If there is no cycle, return null.
  */
 
-// definition for singly-linked list
+// singly-linked list node definition
 struct ListNode {
     int val;
     ListNode *next;

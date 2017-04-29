@@ -11,7 +11,7 @@ using namespace std;
  * equal to x. You should preserve the original relative order of the nodes in each of the two partitions.
  */
 
-// definition for singly-linked list
+// singly-linked list node definition
 struct ListNode {
     int val;
     ListNode *next;

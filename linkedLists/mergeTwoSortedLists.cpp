@@ -11,7 +11,7 @@ using namespace std;
  * of the first two lists, and should also be sorted.
  */
 
-// definition for singly-linked list
+// singly-linked list node definition
 struct ListNode {
     int val;
     ListNode *next;

@@ -12,6 +12,7 @@ using namespace std;
  * Clone an undirected graph. Each node in the graph contains a label and a list of its neighbors.
  */
 
+// graph node definition
 struct UndirectedGraphNode {
     string label;
     vector<UndirectedGraphNode*> neighbors;
@@ -35,7 +36,7 @@ UndirectedGraphNode* cloneGraph(UndirectedGraphNode* graph) {
 
         // for each neighbor
         for (UndirectedGraphNode* neighbor : currNode->neighbors) {
-            // if no copie exists
+            // if no copy exists
             if (map.find(neighbor) == map.end()) {
                 // create a new node in the cloned graph
                 UndirectedGraphNode* neighborClone = new UndirectedGraphNode(neighbor->label);

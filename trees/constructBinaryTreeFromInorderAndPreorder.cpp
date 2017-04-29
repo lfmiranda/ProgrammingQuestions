@@ -12,6 +12,7 @@ using namespace std;
  * You may assume that duplicates do not exist in the tree.
  */
 
+// tree node definition
 struct TreeNode {
     int val;
     TreeNode *left;
