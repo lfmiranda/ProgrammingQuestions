@@ -55,3 +55,21 @@ UndirectedGraphNode* cloneGraph(UndirectedGraphNode* graph) {
 
     return clone;
 }
+
+void cloneGraphTester() {
+    UndirectedGraphNode* A = new UndirectedGraphNode("A");
+    UndirectedGraphNode* B = new UndirectedGraphNode("B");
+    UndirectedGraphNode* C = new UndirectedGraphNode("C");
+    UndirectedGraphNode* D = new UndirectedGraphNode("D");
+
+    A->neighbors.push_back(B);
+    A->neighbors.push_back(C);
+    B->neighbors.push_back(A);
+    B->neighbors.push_back(C);
+    C->neighbors.push_back(A);
+    C->neighbors.push_back(B);
+    C->neighbors.push_back(D);
+    D->neighbors.push_back(C);
+
+    cloneGraph(A);
+}
