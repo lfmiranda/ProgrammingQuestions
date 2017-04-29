@@ -47,3 +47,10 @@ TreeNode* buildTree(vector<int> &preorder, vector<int> &inorder) {
     if (preorder.size() == 0) return NULL;
     return buildTreeHelper(preorder.begin(), preorder.end(), inorder.begin(), inorder.end());
 }
+
+void buildTreeTester() {
+    vector<int> preorder = {1, 2, 3, 4, 5, 6, 7};
+    vector<int> inorder = {3, 2, 4, 1, 6, 5, 7};
+
+    buildTree(preorder, inorder);
+}
