@@ -3,6 +3,15 @@
 
 using namespace std;
 
+/*
+ * - Problem:
+ * Intersection of sorted arrays
+ *
+ * - Problem description:
+ * Find the intersection of two sorted arrays.
+ * In other words, given 2 sorted arrays, find all the elements which occur in both the arrays.
+ */
+
 vector<int> intersect(const vector<int>& A, const vector<int>& B) {
     vector<int> intersection;
 

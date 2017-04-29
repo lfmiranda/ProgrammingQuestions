@@ -4,6 +4,15 @@
 
 using namespace std;
 
+/*
+ * - Problem:
+ * Capture regions on the board
+ *
+ * - Problem description:
+ * Given a 2D board containing 'X' and 'O', capture all regions surrounded by 'X'.
+ * A region is captured by flipping all 'O's into 'X's in that surrounded region.
+ */
+
 void bfsBoundary(vector<vector<char>>& board, long i, long j) {
     long M = board.size();
     long N = board[0].size();

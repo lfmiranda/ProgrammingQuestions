@@ -3,6 +3,16 @@
 
 using namespace std;
 
+/*
+ * - Problem:
+ * Remove duplicates from sorted array
+ *
+ * - Problem description:
+ * Remove duplicates from Sorted Array. Given a sorted array, remove the duplicates in place such that each element
+ * appears only once and return the new length. Note that even though we want you to return the new length, make sure
+ * to change the original array as well in place.
+ */
+
 int removeDuplicates(vector<int>& A) {
     int N = (int)A.size();
     int q = 0; // index of the last distinct element found

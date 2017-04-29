@@ -3,6 +3,15 @@
 
 using namespace std;
 
+/*
+ * - Problem:
+ * Construct binary tree from inorder and preorder
+ *
+ * - Problem description:
+ * Given preorder and inorder traversal of a tree, construct the binary tree.
+ * You may assume that duplicates do not exist in the tree.
+ */
+
 struct TreeNode {
     int val;
     TreeNode *left;

@@ -3,6 +3,15 @@
 
 using namespace std;
 
+/*
+ * - Problem:
+ * Combination sum
+ *
+ * - Problem description:
+ * Given a set of candidate numbers (C) and a target number (T), find all unique combinations in C where the candidate
+ * numbers sums to T. The same repeated number may be chosen from C unlimited number of times.
+ */
+
 void combinationSumHelper(vector<int>& uniqueCandidates, int currIndex, vector<int>& currCombination,
                           int currSum, int target, vector<vector<int>>& ans) {
     if (currSum > target) return; // stopping criteria

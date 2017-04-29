@@ -3,6 +3,17 @@
 
 using namespace std;
 
+/*
+ * - Problem:
+ * List cycle
+ *
+ * - Problem description:
+ * Given two numbers represented as strings, return multiplication of the numbers as a string.
+ * Notes:
+ * 1- The numbers can be arbitrarily large and are non-negative.
+ * 2- The answer should not have leading zeroes. For example, 00 is not a valid answer.
+ */
+
 string multiplyStrings(string& num1, string& num2) {
     int N1 = (int) num1.size();
     int N2 = (int) num2.size();
