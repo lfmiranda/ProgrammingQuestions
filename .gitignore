@@ -3,5 +3,11 @@
 CMakeLists.txt
 cmake-build-debug/
 
+# IntelliJ project files
+*.iml
+*.ipr
+*.iws
+out/
+
 # Misc
 .DS_Store
