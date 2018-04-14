@@ -12,19 +12,16 @@ using namespace std;
  */
 
 int maxSumContiguousSubarray(const vector<int>& A) {
-    if (A.empty()) return 0;
+    int maxSumContiguousSubarray = numeric_limits<int>::lowest();
+    int sumCurrSubArray = 0;
 
-    int maxSum = numeric_limits<int>::lowest();
-    int currSum = 0;
-
-    for (int currVal : A) {
-        currSum += currVal;
-
-        maxSum = max(maxSum, currSum);
-        if (currSum < 0) currSum = 0;
+    for (int currElement : A) {
+        sumCurrSubArray += currElement;
+        maxSumContiguousSubarray = max(maxSumContiguousSubarray, sumCurrSubArray);
+        if (sumCurrSubArray < 0) sumCurrSubArray = 0;
     }
 
-    return maxSum;
+    return maxSumContiguousSubarray;
 }
 
 void MaxSumContiguousSubarrayTester() {
